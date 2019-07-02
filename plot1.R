@@ -16,6 +16,6 @@ subset_data = subset(my_data, as.Date(DateTime) >= as.Date("2007-02-01") & as.Da
 
 png("plot1.png", height=480, width=480)
 
-hist(subset_data$Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)", ylab = "Frequency")
+hist(subset_data$Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)", main = "Global Active Power")
 dev.off()
 
