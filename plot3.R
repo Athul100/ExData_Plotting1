@@ -17,7 +17,6 @@ subset_data = subset(my_data, as.Date(DateTime) >= as.Date("2007-02-01") & as.Da
 
 png("plot3.png", height=480, width=480)
 
-plot(subset_data$DateTime, subset_data$Global_active_power, type = "n", xlab = "", ylab = "Global Active Power (kilowatts)")
 plot(subset_data$DateTime, subset_data$Sub_metering_1, type = "n", xlab = "", ylab = "Energy sub metering")
 
 lines(subset_data$DateTime, subset_data$Sub_metering_1)
